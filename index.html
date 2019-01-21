@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <title>HOME BANKING</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="text/javascript" src="js/homebanking.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="img/logo.png"/>
+      <div class="align-left">
+        <span id="nombre">Bienvenido/a</span>
+        <img id "avatar" class="avatar" src="img/feliz.svg"/>
+      </div>
+    </div>
+    <div class="white-container">
+      <div class="menu-container">
+        <h1 class="tu-cuenta">Tu cuenta</h1>
+        <h3 id="selector-cuenta-pesos" onclick="pantallaPesos()">$</h3>
+        <h3 id="selector-cuenta-dolar" onclick="pantallaDolar()">u$d</h3>
+        <button class="links" onclick="extraerDinero()">Extraer dinero</button>
+        <button class="links" onclick="depositarDinero()">Depositar dinero</button>
+        <button class="links" onclick="pagarServicio()">Pagar servicios</button>
+        <button class="links" onclick="transferirDinero()">Transferir dinero</button>
+        <button class="links" onclick="cambiarLimiteDeExtraccion()">Cambiar límite de extracción</button>
+        <button class="links" onclick="pantallaCompraVentaDolar()">Comprar/Vender Dolares</button> 
+      </div>
+      <div class="green-container">
+        <div class="cuenta-info">
+          <p class="pesos" id="parrafo-pesos">Saldo en tu cuenta $ </p>
+          <h3 class="saldos pesos" id="saldo-cuenta">$</h3>
+          <p class="pesos" id="limite-extraccion">Tu límite de extracción es: </p>
+
+          <p  id="parrafo-dolar" class="parrafo">Saldo en tu cuenta u$d </p>
+          <h3 class="saldos" id="saldo-dolar">$</h3>
+           <p class="parrafo" id="saldo-maximo">Tu saldo actual en pesos es $ </p>
+  
+          
+
+          <div id="caja-comprar" class="dolar">
+            <h3 class="inline"> COMPRAR:</h3>
+            <p  class="inline">u$d 1 = $28,50</p>
+            <input  id="compra-dolar"  type="number" max="5"  onkeyup="displayDolarCompra()">
+            <h3  id="cantidad-pesos-compra" class="inline">$0.00</h3>
+            <button  id="boton-comprar" class="inline" onclick="compraDolar()">Aceptar</button>
+          </div>
+
+          <div id="caja-vender" class="dolar">
+            <h3 class="inline"> VENDER:</h3>
+            <p  class="inline">u$d 1 = $27,00</p>
+            <input id="vende-dolar" type="number" maxlength="5"  onkeyup="displayDolarVenta()">
+            <h3  id="cantidad-pesos-venta" class="inline">$0.00</h3>
+            <button id="boton-vender" class="inline" onclick="ventaDolar()">Aceptar</button>
+          </div>
+        </div>   
+      </div>
+    </div>
+  </body>
+</html>

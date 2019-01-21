@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+
+    font-family: "Source Sans Pro", sans-serif;
+
+    background-color: #2a333d;
+    background-image: url("../img/fondo.gif");
+    /*https://phlearn.com/wp-content/uploads/2012/08/cinemagraph.gif*/
+    background-size: cover;
+
+
+}
+
+.avatar {
+    display: inline-block;
+
+    vertical-align: text-bottom;
+    width: 50px;
+}
+
+.logo {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+
+    text-align: left;
+    vertical-align: text-bottom;
+}
+
+.align-left {
+    display: flex;
+    padding: 8px;
+
+    align-items: center;
+}
+
+.tu-cuenta {
+    padding-left: 24px;
+    margin: 0;
+    margin-left: -30px;
+
+    font-family: "Source Sans Pro";
+    font-size: 32px;
+    font-weight: normal;
+
+    color: #2a333d;
+    border-left: 6px solid #C0AC87;
+}
+
+.header {
+    display: flex;
+    width: 65%;
+    margin: 7% auto 0;
+    margin-bottom: 15px;
+
+    justify-content: space-between;
+}
+
+.cuenta-info {
+    display: block;
+    width: 100%;
+}
+
+#nombre {
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+
+    font-size: 14px;
+
+    text-overflow: ellipsis;
+
+    color: #fff;
+    font-family: helvetica,sans-serif;
+}
+
+.links {
+    position: relative;
+
+    display: block;
+    padding: 0;
+    margin: 20px 0;
+    margin-bottom: 10px;
+
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+
+    cursor: pointer;
+    -webkit-transition: all .6s ease-in-out;
+       -moz-transition: all .6s ease-in-out;
+         -o-transition: all .6s ease-in-out;
+            transition: all .6s ease-in-out;
+    text-align: left;
+    vertical-align: text-bottom;
+
+    color: #666;
+    border: 0;
+    background-color: transparent;
+}
+
+.links:hover {
+    margin-left: 10px;
+
+    color: #C0AC87;
+}
+
+.white-container {
+    display: flex;
+    width: 65%;
+    padding: 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    border: 1px solid #979797;
+    border-radius: 8px;
+    background-color: #fff;
+
+    justify-content: center;
+    opacity: .9;
+}
+
+.green-container {
+    display: flex;
+    width: 65%;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    color: white;
+    border-radius: 8px;
+    background-color: #C0AC87;
+
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.menu-container {
+    display: block;
+    width: 35%;
+    padding-right: 20px;
+}
+
+.menu-container h3{
+    display: inline-block;
+    margin-left: 20px;
+    cursor:pointer;
+}
+
+
+#selector-cuenta-pesos{
+    color: #C0AC87;
+}
+
+.menu-container h1{
+    display: inline-block;
+}
+.cuenta-container {
+    width: 35%;
+}
+
+.saldos {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+
+    font-size: 6.5vw;
+
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+#saldo-dolar{
+    display: none;
+}
+
+
+.parrafo{
+    display: none;
+
+}
+
+.dolar{
+    display: none;
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: left;
+    height: auto;
+    width: 100%;
+}
+.dolar p{
+    margin-left: 10px;
+}
+
+#saldo-maximo{
+    margin-top: -5px;
+}
+
+
+.inline{
+    display: inline-block;
+    margin-top: -5px;
+}
+
+
+.dolar h3:first-child{
+    margin-left: 20px;
+}
+
+
+#caja-vender p{
+    margin-left: 23px;
+
+}
+.dolar button{
+    margin-left: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #C5B79D;
+    font-family: helvetica,sans-serif;
+    color:#fff;
+    border:1px solid #fff; ;
+}
+
+.dolar button:hover{
+    border:2px solid #fff;
+}
+
+.dolar input{
+    margin-left: 10px;
+    border-radius: 40px; 
+    width: 30%; 
+}
+
+.dolar input:focus{
+    outline: none;
+    border:2px solid #C5B79D;
+}
+
+.dolar input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+
+#limite-extraccion {
+    overflow: hidden;
+
+    font-size: 15px;
+
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 800px) {
+    .white-container {
+        flex-direction: column-reverse;
+    }
+
+    .green-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #saldo-cuenta {
+        font-size: 8.5vw;
+    }
+
+    .menu-container {
+        width: 100%;
+    }
+
+    .header {
+        margin-bottom: 10px;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+    .dolar input{
+        width: 50%;
+    }
+    .inline{
+        display: block;
+        margin:0px 0px 0px 0.3%;
+        
+    }
+    .dolar button{
+        margin-top: 5%;
+
+    }
+    #cantidad-pesos-compra{
+        display: inline-block;
+        margin-left: 0.3%;
+    }
+    #cantidad-pesos-venta{
+        display: inline-block;
+        margin-left: 0.3%;
+    }
+}
